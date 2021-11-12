@@ -1,1 +1,1 @@
-python -m SimpleHTTPServer &
+nohup python -m SimpleHTTPServer &
