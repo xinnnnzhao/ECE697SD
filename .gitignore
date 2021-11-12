@@ -1,0 +1,12 @@
+.idea
+**/build
+**/cmake-build-debug
+**/.DS_Store
+**/*.so
+**/*.o
+**/*.a
+**/*.exe
+**/*.bc
+**/*.s
+**/*.ll
+**/llvm-project
