@@ -5,17 +5,19 @@ Project Proposal Overleaf Link: https://www.overleaf.com/9956381517dgvrjtymdnss
 1.点云
 
 1.1 点云拼接（配准）
+  
   使用Python第三方库Open3d导出深度相机的点云，并进行拼接（配准）
   RealSense ( librealsenseSDK v2) 已集成到 Open3D (v0.12+) 中，您可以通过 C++ 和 Python API 使用它，而无需librealsense在 Linux、macOS 和 Windows 上单独安装 SDK。英特尔GitHub链接：https://github.com/IntelRealSense/librealsense/tree/master/wrappers/open3d
   Open3D是一个开源库，支持快速开发处理3D数据的软件。Open3D后端是用C++实现的，并通过Python的前端接口公开。Open3D提供了三种数据结构：点云（point cloud）、网格（mesh）和RGB-D图像。对于每个表示，open3D都实现了一整套基本处理算法，如I/O、采样、可视化和数据转换。此外，还包括一些常用的算法，如ICP配准，也就是实现点云拼接的算法。Open3d链接：http://www.open3d.org/docs/latest/tutorial/sensor/index.html
 
-1.2 点云导出\n
+1.2 点云导出：
   目前看来，深度相机本地可视化使用的是视频帧，具体还不明确。
 
-1.3 降低点云分辨率/降采样\n
+1.3 降低点云分辨率/降采样：
   方法未知
 
 1.3 点云压缩  
+
   点云压缩现状及发展趋势 https://blog.csdn.net/baidu_35231778/article/details/116046090
   Google Draco: https://github.com/google/draco
   DracoUnity: https://github.com/atteneder/DracoUnity
