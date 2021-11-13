@@ -25,7 +25,7 @@ Project Proposal Overleaf Link: https://www.overleaf.com/9956381517dgvrjtymdnss
   ![))QXSHG_X @{$N)Q5}{BENF](https://user-images.githubusercontent.com/35893137/141601448-2afe24d1-2e2a-4bb8-b192-045e106da407.png)
   ![L@Z U }_{VVL0J TPD@8WR](https://user-images.githubusercontent.com/35893137/141601645-3de36fff-7c19-4b37-bb42-f2b424f65364.png)
 
-  当然，每个人的知识背景不同，虽然能够理解各种优化方案的基本思想，可是离真正去实现一个工具还是有一定的距离。幸好现在是一个开源的时代， 有很多现成的工具可以利用，避免重复造轮子。在此推荐几个好用的模型优化库(工具) :
+  几个好用的模型优化库(工具) :
   ● https://github.com/zeux/meshoptimizer 三维模型优化库
   ● https://github.com/zeux/meshoptimizer/tree/master/gltf 在meshoptimizer基础上实现的网格优化程序，可以直接优化gltf模型
   ● github.com/google/draco Google开发的网格压缩库，压缩率非常高
