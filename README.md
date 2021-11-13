@@ -43,6 +43,7 @@ Project Proposal Overleaf Link: https://www.overleaf.com/9956381517dgvrjtymdnss
   
 
 **职责**
+
 Xiaohao Xia: Develop a project time plan, and communicate with the professor. Import the point cloud file into Unity and implement modeling in Unity at the same time.
 
 Yinxuan Wu: Responsible for the data capture of the depth camera, Point cloud stitching, read the point cloud file. save hardware, etc.
