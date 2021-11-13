@@ -14,6 +14,10 @@ Project Proposal Overleaf Link: https://www.overleaf.com/9956381517dgvrjtymdnss
 
 1.3 点云压缩  
   点云压缩现状及发展趋势 https://blog.csdn.net/baidu_35231778/article/details/116046090
+  Google Draco: https://github.com/google/draco
+  DracoUnity: https://github.com/atteneder/DracoUnity
+  Draco 是一个用于压缩和解压缩 3D 几何网格和点云的库。它旨在改进 3D 图形的存储和传输。Draco 是为压缩效率和速度而设计和制造的。该代码支持压缩点、连接信息、纹理坐标、颜色信息、法线以及与几何相关的任何其他通用属性。使用 Draco，使用 3D 图形的应用程序可以显着缩小而不影响视觉保真度。对于用户来说，这意味着现在可以更快地下载应用程序，可以更快地加载浏览器中的 3D 图形，并且现在可以以一小部分带宽传输 VR 和 AR 场景并快速渲染。Draco 作为 C++ 源代码发布，可用于压缩 3D 图形以及编码数据的 C++ 和 Javascript 解码器。
+  
 
 
 2.远程传输
