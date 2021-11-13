@@ -23,6 +23,8 @@ Project Proposal Overleaf Link: https://www.overleaf.com/9956381517dgvrjtymdnss
   DracoUnity: https://github.com/atteneder/DracoUnity
   Draco 是一个用于压缩和解压缩 3D 几何网格和点云的库。它旨在改进 3D 图形的存储和传输。Draco 是为压缩效率和速度而设计和制造的。该代码支持压缩点、连接信息、纹理坐标、颜色信息、法线以及与几何相关的任何其他通用属性。使用 Draco，使用 3D 图形的应用程序可以显着缩小而不影响视觉保真度。对于用户来说，这意味着现在可以更快地下载应用程序，可以更快地加载浏览器中的 3D 图形，并且现在可以以一小部分带宽传输 VR 和 AR 场景并快速渲染。Draco 作为 C++ 源代码发布，可用于压缩 3D 图形以及编码数据的 C++ 和 Javascript 解码器。
   ![))QXSHG_X @{$N)Q5}{BENF](https://user-images.githubusercontent.com/35893137/141601448-2afe24d1-2e2a-4bb8-b192-045e106da407.png)
+  ![L@Z U }_{VVL0J TPD@8WR](https://user-images.githubusercontent.com/35893137/141601645-3de36fff-7c19-4b37-bb42-f2b424f65364.png)
+
   当然，每个人的知识背景不同，虽然能够理解各种优化方案的基本思想，可是离真正去实现一个工具还是有一定的距离。幸好现在是一个开源的时代， 有很多现成的工具可以利用，避免重复造轮子。在此推荐几个好用的模型优化库(工具) :
   ● https://github.com/zeux/meshoptimizer 三维模型优化库
   ● https://github.com/zeux/meshoptimizer/tree/master/gltf 在meshoptimizer基础上实现的网格优化程序，可以直接优化gltf模型
