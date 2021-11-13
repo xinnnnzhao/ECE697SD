@@ -16,7 +16,7 @@ Project Proposal Overleaf Link: https://www.overleaf.com/9956381517dgvrjtymdnss
 1.3 降低点云分辨率/降采样：
   方法未知
 
-1.3 点云压缩  
+1.4 点云压缩  
 
   点云压缩现状及发展趋势 https://blog.csdn.net/baidu_35231778/article/details/116046090
   Google Draco: https://github.com/google/draco
