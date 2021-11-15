@@ -74,8 +74,8 @@ Xin Zhao: Responsible for develop a software to complete remote transmission of 
 Unity可以单次读取不同格式（xyz和ply）的点云文件  
 可以通过Cloud Manger的start 更换为update 实现对每帧点云文件读取的刷新    
 **下一步**  
-如果要实现人物点云的实时追踪，环境点云和人物点云首先需要分离，同时需要对人物点云进行算法处理，这是一个巨大的挑战，我们可能需要使用其他方式替换处理。   
-Unity自动实时读取点云文件，当Unity第一次读取时仍需要手动读取，需要设计脚本    
+在点云环境中创建VR观察者的摄像机，以便观察者可以通过VR设备浏览模型环境。    
+Unity自动实时读取点云文件，当Unity第一次读取时仍需要手动读取，需要设计脚本     
 
 **吴寅轩**  
 **已完成**  
