@@ -39,7 +39,7 @@ Project Proposal Overleaf Link: https://www.overleaf.com/9956381517dgvrjtymdnss
 
 3.Unity读取点云文件
   
-  Unity可以读取ply格式文件，但无法读取深度摄像机中点云文件
+  Unity可以自定义帧数刷新读取xyz格式文件来实现实时读取，但无法读取深度摄像机中点云文件
 
 
 4.Unity导入VR设备
