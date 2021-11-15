@@ -58,49 +58,48 @@ Project Proposal Overleaf Link: https://www.overleaf.com/9956381517dgvrjtymdnss
   4.点云文件在A电脑与B电脑之间实时传输
   
 
-**职责**
+**职责**  
 
-Xiaohao Xia: Develop a project time plan, and communicate with the professor. Import the point cloud file into Unity and implement modeling in Unity at the same time.
+Xiaohao Xia: Develop a project time plan, and communicate with the professor. Import the point cloud file into Unity and implement modeling in Unity at the same time.  
 
-Yinxuan Wu: Responsible for the data capture of the depth camera, Point cloud stitching, read the point cloud file. save hardware, etc.
+Yinxuan Wu: Responsible for the data capture of the depth camera, Point cloud stitching, read the point cloud file. save hardware, etc.  
 
-Xintao Ding: Responsible for completing the remote transmission of the cloud file with Xin Zhao, preparing the project display, and project record, importing model data into VR headset.
+Xintao Ding: Responsible for completing the remote transmission of the cloud file with Xin Zhao, preparing the project display, and project record, importing model data into VR headset.  
 
-Xin Zhao: Responsible for develop a software to complete remote transmission of cloud file, and second inspection experiment report.
+Xin Zhao: Responsible for develop a software to complete remote transmission of cloud file, and second inspection experiment report.  
 
-**夏晓昊**
-**已完成**
+**夏晓昊**  
+**已完成**  
 选取Unity合适的点云读取插件（Point Cloud Free Viewer, PCX）
 Unity可以单次读取不同格式（xyz和ply）的点云文件
 可以通过Cloud Manger的start 更换为update 实现对每帧点云文件读取的刷新
-**下一步**
-如果要实现人物点云的实时追踪，环境点云和人物点云首先需要分离，同时需要对人物点云进行算法处理，这是一个巨大的挑战，我们可能需要使用其他方式替换处理。
-Unity自动实时读取点云文件，当Unity第一次读取时仍需要手动读取，需要设计脚本
+**下一步**  
+如果要实现人物点云的实时追踪，环境点云和人物点云首先需要分离，同时需要对人物点云进行算法处理，这是一个巨大的挑战，我们可能需要使用其他方式替换处理。  
+Unity自动实时读取点云文件，当Unity第一次读取时仍需要手动读取，需要设计脚本  
 
-**吴寅轩**
-**已完成**
-通过open3读取深度摄像机不同格式的点云文件
-使用python实现点云拼接
-可以单次导出点云文件
-**下一步**
-自动实时导出点云文件
-四台深度摄像机同时无延迟实时拍摄
+**吴寅轩**  
+**已完成**  
+通过open3读取深度摄像机不同格式的点云文件  
+使用python实现点云拼接  
+可以单次导出点云文件  
+**下一步**  
+自动实时导出点云文件  
+四台深度摄像机同时无延迟实时拍摄  
 
-**赵鑫**
-**已完成**
-配置两台电脑之间的网络协议和环境
-设计程序实现电脑A电脑B之间的点云文件远程传输
-**下一步**
-尝试降低传输延迟
-实验报告撰写
+**赵鑫**  
+**已完成**  
+配置两台电脑之间的网络协议和环境  
+设计程序实现电脑A电脑B之间的点云文件远程传输  
+**下一步**  
+尝试降低传输延迟  
+实验报告撰写  
 
-**丁忻涛**
-**已完成**
-HTC Vive和Unity环境配置
-选择出Unity合适的渲染管道SRP
-问题记录
-**下一步**
-处理点云文件过界问题(即读取ply文件报错，解决方案见教授的RA回复)
-
-实现点云追踪
+**丁忻涛**  
+**已完成**  
+HTC Vive和Unity环境配置  
+选择出Unity合适的渲染管道SRP  
+问题记录  
+**下一步**  
+处理点云文件过界问题(即读取ply文件报错，解决方案见教授的RA回复)  
+实现点云追踪  
 
