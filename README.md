@@ -47,7 +47,7 @@ Project Proposal Overleaf Link: https://www.overleaf.com/9956381517dgvrjtymdnss
   HTC VIVE，VR Steram与Unity交互
 
 
-瓶颈和挑战
+瓶颈和挑战：
   
   1.要实现人物跟踪，需要将人物和场景点云分离，我们只能做到人物作为环境元素来实现观察，通过不断刷新读取点云文件来实现观察人物的位置。
   
