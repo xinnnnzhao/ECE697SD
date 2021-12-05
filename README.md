@@ -14,7 +14,8 @@ Project Proposal Overleaf Link: https://www.overleaf.com/9956381517dgvrjtymdnss
   目前看来，深度相机本地可视化使用的是视频帧，具体还不明确。
 
 1.3 降低点云分辨率/降采样：
-  方法未知
+  realsense相机：pyrealsense2.decimation_filter()
+  open3d: Voxel downsampling
 
 1.4 点云压缩  
 
