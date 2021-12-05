@@ -17,8 +17,9 @@ Project Proposal Overleaf Link: https://www.overleaf.com/9956381517dgvrjtymdnss
   realsense相机：pyrealsense2.decimation_filter()
   open3d: Voxel downsampling
 
-1.4 点云压缩  
-
+1.4 点云压缩（powershell脚本压缩后传输）
+  
+  以下内容仅为拓展学习，不在本项目中实现。
   点云压缩现状及发展趋势 https://blog.csdn.net/baidu_35231778/article/details/116046090
   Google Draco: https://github.com/google/draco
   DracoUnity: https://github.com/atteneder/DracoUnity
@@ -35,7 +36,7 @@ Project Proposal Overleaf Link: https://www.overleaf.com/9956381517dgvrjtymdnss
 
 2.远程传输
 
-  AWS服务器，shell调用脚本
+  AWS服务器，powershell调用脚本
 
 
 3.Unity读取点云文件
