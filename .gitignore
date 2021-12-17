@@ -10,3 +10,4 @@
 **/*.s
 **/*.ll
 **/llvm-project
+/Pyrealsense2_ControlCameras/ece-697-aws-key.pem
