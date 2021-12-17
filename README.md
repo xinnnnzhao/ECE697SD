@@ -2,6 +2,119 @@
 
 Project Proposal Overleaf Link: https://www.overleaf.com/9956381517dgvrjtymdnss
 
+1. Point clouds
+
+1.1 Point cloud stitching (alignment)
+  
+  Export point clouds from depth cameras using the Python third-party library Open3d and perform stitching (alignment)
+  RealSense ( librealsenseSDK v2) is integrated into Open3D (v0.12+) and you can use it via C++ and Python APIs without the need for librealsense to install separate SDKs on Linux, macOS and Windows. Intel GitHub Link. https://github.com/IntelRealSense/librealsense/tree/master/wrappers/open3d
+  Open3D is an open source library that supports rapid development of software for processing 3D data. open3D backend is implemented in C++ and exposed through a front-end interface in Python. open3D provides three data structures: point cloud, mesh, and RGB-D images. For each representation, open3D implements a set of basic processing algorithms, such as I/O, sampling, visualization and data conversion. In addition, some common algorithms are included, such as ICP alignment, which is the algorithm that implements point cloud stitching. open3d link: http://www.open3d.org/docs/latest/tutorial/sensor/index.html
+
+1.2 Point cloud export.
+  Currently it seems that the deep camera local visualization uses video frames, which are not yet clear.
+
+1.3 Point cloud resolution reduction/downsampling.
+  realsense camera: pyrealsense2.decimation_filter()
+  open3d: Voxel downsampling
+
+1.4 Point cloud compression (powershell script compressed and transferred)
+  
+  The following content is for extended learning only and is not implemented in this project.
+  Point cloud compression status and development trend https://blog.csdn.net/baidu_35231778/article/details/116046090
+  Google Draco: https://github.com/google/draco
+  DracoUnity: https://github.com/atteneder/DracoUnity
+  Draco is a library for compressing and decompressing 3D geometric meshes and point clouds. It is designed to improve the storage and transfer of 3D graphics. draco is designed and built for compression efficiency and speed. The code supports compression of points, connection information, texture coordinates, color information, normals, and any other general properties related to geometry. Using Draco, applications that use 3D graphics can be significantly reduced in size without compromising visual fidelity. For users, this means that applications can now be downloaded faster, 3D graphics can now be loaded faster in the browser, and VR and AR scenes can now be transferred and rendered quickly with a fraction of the bandwidth.Draco is distributed as C++ source code for compressing 3D graphics as well as C++ and Javascript decoders for encoding data.
+  ! [))QXSHG_X @{$N)Q5}{BENF](https://user-images.githubusercontent.com/35893137/141601448-2afe24d1-2e2a-4bb8-b192-045e106da407.png)
+  ! [L@Z U }_{VVL0J TPD@8WR](https://user-images.githubusercontent.com/35893137/141601645-3de36fff-7c19-4b37-bb42-f2b424f65364.png)
+
+  Several good libraries (tools) for model optimization :
+  ● https://github.com/zeux/meshoptimizer 3-D model optimization library
+  ● https://github.com/zeux/meshoptimizer/tree/master/gltf A mesh optimization program implemented on top of meshoptimizer, which can directly optimize gltf models
+  ● github.com/google/draco Google-developed mesh compression library, with very high compression rate
+  ● github.com/CesiumGS/glt... Cesium developed gltf tool, can directly call Draco to compress gltf
+
+
+2. Remote transfer
+
+  AWS server, powershell call script
+
+
+3.Unity reads point cloud files
+  
+  Unity can customize the frame refresh read xyz format file to achieve real-time reading, but can not read the depth of the camera in the point cloud file
+
+
+4.Unity import VR devices
+  
+  HTC VIVE, VR Steram and Unity interaction
+
+
+Bottlenecks and challenges.
+  
+  1. To achieve character tracking, you need to separate the character and the scene point cloud, we can only do the character as an environmental element to achieve observation, by constantly refreshing the read point cloud file to achieve observation of the character's position.
+  
+  2. Unity real-time reading point cloud file
+  
+  3. Deep camera export point cloud file in real time
+  
+  4. Point cloud file in real-time transfer between computer A and computer B  
+  
+
+**PS**  
+If we want to achieve real-time tracking of character point cloud, environment point cloud and character point cloud need to be separated first, and also need to process the character point cloud algorithmically, which is a huge challenge.  
+Although RA provides some references, it seems that they are only relevant and do not solve the problem at the moment. Maybe we have to spend more time to explore.
+
+
+**Responsibilities**  
+
+Xiaohao Xia: Develop a project time plan, and communicate with the professor. Import the point cloud file into Unity and implement modeling in Unity at the Import the point cloud file into Unity and implement modeling in Unity at the same time.  
+
+Yinxuan Wu: Responsible for the data capture of the depth camera, Point cloud stitching, read the point cloud file. save hardware, etc.  
+
+Xintao Ding: Responsible for completing the remote transmission of the cloud file with Xin Zhao, preparing the project display, and project record, Importing model data into VR headset.  
+
+Xin Zhao: Responsible for developing a software to complete remote transmission of cloud file, and second inspection experiment report.  
+
+**Xia Xiaohao**  
+**Completed**  
+Select the appropriate point cloud reading plug-in for Unity (Point Cloud Free Viewer, PCX)  
+Unity can read point cloud files in different formats (xyz and ply) in a single pass  
+You can replace start with update in Cloud Manger to refresh the point cloud readings per frame    
+**Next step**  
+Create a VR observer's camera in the point cloud environment so that the observer can browse the model environment through the VR device.  
+Finish writing the lab report with Zhao Xin   
+ 
+**Yinxuan Wu**  
+**Completed**  
+Read point cloud files of different formats from depth cameras via open3  
+Use python to implement point cloud stitching  
+Can export point cloud files in a single pass    
+**next step**  
+Automatically export point cloud files in real time  
+Four depth cameras simultaneously shoot in real time without delay  
+
+**Zhao Xin**  
+**Completed**  
+Configure the network protocol and environment between the two computers  
+Design the program to achieve remote transfer of point cloud files between computer A computer B    
+**next step**    
+Try to reduce the transmission delay  
+Experiment report writing  
+
+**Ding Xintao**  
+**Completed**  
+HTC Vive and Unity environment configuration  
+Select out the appropriate rendering pipeline SRP for Unity  
+Problem logging    
+**next step**  
+Handle point cloud file over bound issue (i.e. read ply file reports error, see professor's RA reply for solution)  
+Implement point cloud tracking  
+
+
+# ECE697SD
+
+Project Proposal Overleaf Link: https://www.overleaf.com/9956381517dgvrjtymdnss
+
 1.点云
 
 1.1 点云拼接（配准）
