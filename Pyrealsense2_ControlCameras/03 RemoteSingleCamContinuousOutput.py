@@ -1,4 +1,5 @@
 # Auther: Yinxuan Wu
+# EMail: halfbottleofsoda@gmail.com
 
 #####################################################
 ##                  Export                 ##
@@ -49,10 +50,12 @@ decimate.set_option(rs.option.filter_magnitude, 8)
 # 我们将使用着色器为我们的 PLY 生成纹理（或者，纹理可以从颜色或红外流中获得）
 colorizer = rs.colorizer()
 
-filters = [rs.disparity_transform(),
-           rs.spatial_filter(),
-           rs.temporal_filter(),
-           rs.disparity_transform(False)]
+#####################################################
+# filters = [rs.disparity_transform(),
+#            rs.spatial_filter(),
+#            rs.temporal_filter(),
+#            rs.disparity_transform(False)]
+#####################################################
 
 while 1:
     start = time.time()
@@ -83,22 +86,12 @@ while 1:
     points = pc.calculate(depth_frame)
     pc.map_to(mapped_frame)
 
-    
     points.export_to_ply("./pcply.ply", mapped_frame)
     # points.export_to_ply("./pcply2.ply", mapped_frame)
-    
-    
-    
-    
-    
-    
-    
+
     pcd = o3d.io.read_point_cloud("pcply.ply")
     # downpcd = pcd.voxel_down_sample(voxel_size=0.008)
-    
-    
-    
-    
+
     o3d.io.write_point_cloud("out1.xyz", pcd)
     # o3d.io.write_point_cloud("out.ply", pcd)
 

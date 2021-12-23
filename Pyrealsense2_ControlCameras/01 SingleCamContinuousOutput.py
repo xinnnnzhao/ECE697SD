@@ -1,4 +1,5 @@
 # Auther: Yinxuan Wu
+# EMail: halfbottleofsoda@gmail.com
 
 #####################################################
 ##                  Export                 ##
@@ -61,6 +62,7 @@ spatial.set_option(rs.option.holes_fill, 3)
 # Next, we need to "feed" the frames to the filter one by one:
 temporal = rs.temporal_filter()
 
+# Hole filling filters provide additional depth extrapolation layers.
 # 孔填充过滤器提供了附加的深度外推层：
 hole_filling = rs.hole_filling_filter()
 ################################################################################
@@ -116,16 +118,18 @@ while 1:
         os.remove("out.xyz")
         os.rename("out1.xyz", "out.xyz")
         
-        #####################################################
-        # cmd = ["PowerShell", "-ExecutionPolicy",          #
-        #       "Unrestricted", "-File", ".\\upload.ps1"]   #
-        # ec = subprocess.call(cmd)                         #
-        # print("Powershell returned: {0:d}".format(ec))    #
-        #####################################################
+        #################################################################################################
+        # The following code is used to call a powershell script to compress and upload point clouds.   #
+        # The fact that this code is blocked means that the ability to upload point clouds is removed.  #
+        #################################################################################################
+        # cmd = ["PowerShell", "-ExecutionPolicy",
+        #       "Unrestricted", "-File", ".\\upload.ps1"]
+        # ec = subprocess.call(cmd)
+        # print("Powershell returned: {0:d}".format(ec))
+        #################################################################################################
 
     except Exception:
         print("Error: 没有找到文件或读取文件失败")
-
 
     end = time.time()
     print('Running time: %s Seconds' % (end - start))

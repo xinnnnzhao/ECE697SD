@@ -1,4 +1,5 @@
 # Auther: Yinxuan Wu
+# EMail: halfbottleofsoda@gmail.com
 
 # First import the library
 import pyrealsense2 as rs
@@ -195,9 +196,15 @@ while 1:
         os.remove("out.xyz")
         os.rename("out1.xyz", "out.xyz")
 
-        #cmd = ["PowerShell", "-ExecutionPolicy", "Unrestricted", "-File", ".\\upload.ps1"]  #
-        #ec = subprocess.call(cmd)
-        #print("Powershell returned: {0:d}".format(ec))
+        #################################################################################################
+        # The following code is used to call a powershell script to compress and upload point clouds.   #
+        # The fact that this code is blocked means that the ability to upload point clouds is removed.  #
+        #################################################################################################
+        # cmd = ["PowerShell", "-ExecutionPolicy",
+        #       "Unrestricted", "-File", ".\\upload.ps1"]
+        # ec = subprocess.call(cmd)
+        # print("Powershell returned: {0:d}".format(ec))
+        #################################################################################################
     except Exception:
         print("Error: No file found or failed to read file")
 
