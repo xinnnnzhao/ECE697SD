@@ -1,9 +1,9 @@
 # Auther: Yinxuan Wu
 # EMail: halfbottleofsoda@gmail.com
 
-#####################################################
-##                  Export                 ##
-#####################################################
+######################################################################
+##                 Single Camera Export Pointclouds                 ##
+######################################################################
 
 # First import the library
 import pyrealsense2 as rs
@@ -17,7 +17,6 @@ from subprocess import check_output
 import subprocess
 
 path = "C:\\Users\\15345\\PycharmProjects\\Pyrealsense_test\\out1.ply"
-
 
 # state = AppState()
 
