@@ -33,7 +33,6 @@ Project Proposal Overleaf Link: https://www.overleaf.com/9956381517dgvrjtymdnss
   ● github.com/google/draco Google-developed mesh compression library, with very high compression rate
   ● github.com/CesiumGS/glt... Cesium developed gltf tool, can directly call Draco to compress gltf
 
-
 2. Remote transfer
 
   AWS server, powershell call script
