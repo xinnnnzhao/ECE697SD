@@ -1,3 +1,5 @@
+# Auther: Yinxuan Wu
+
 # First import the library
 import pyrealsense2 as rs
 import numpy as np
