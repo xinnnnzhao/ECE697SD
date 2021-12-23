@@ -33,13 +33,12 @@ Project Proposal Overleaf Link: https://www.overleaf.com/9956381517dgvrjtymdnss
   ● github.com/google/draco Google-developed mesh compression library, with very high compression rate
   ● github.com/CesiumGS/glt... Cesium developed gltf tool, can directly call Draco to compress gltf
 
-
 2. Remote transfer
 
   AWS server, powershell call script
 
 
-3.Unity reads point cloud files
+3. Unity reads point cloud files
   
   Unity can customize the frame refresh read xyz format file to achieve real-time reading, but can not read the depth of the camera in the point cloud file  
 **Download point cloud file (client):**  
@@ -49,12 +48,12 @@ Project Proposal Overleaf Link: https://www.overleaf.com/9956381517dgvrjtymdnss
  **Unity reads the point cloud:**  
   Use Unity to open the PointCloud project, and note that the Unity read path should be the location of the point cloud file.
 
-4.Unity import VR devices
+4. Unity import VR devices
   
   HTC VIVE, VR Steram and Unity interaction
 
 
-Bottlenecks and challenges.
+**Bottlenecks and challenges.**  
   
   1. To achieve character tracking, you need to separate the character and the scene point cloud, we can only do the character as an environmental element to achieve observation, by constantly refreshing the read point cloud file to achieve observation of the character's position.
   
