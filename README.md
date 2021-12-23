@@ -41,12 +41,12 @@ Project Proposal Overleaf Link: https://www.overleaf.com/9956381517dgvrjtymdnss
 
 3.Unity reads point cloud files
   
-  Unity can customize the frame refresh read xyz format file to achieve real-time reading, but can not read the depth of the camera in the point cloud file
-** Download point cloud file (client):**
+  Unity can customize the frame refresh read xyz format file to achieve real-time reading, but can not read the depth of the camera in the point cloud file  
+**Download point cloud file (client):**  
   First download the powershell script dowload.scp.ps1, and the path to be placed is to receive the point cloud
   Download path.
-  Then use Powershell to start the script (./dowload.scp.ps1 out)
- **Unity reads the point cloud:**
+  Then use Powershell to start the script (./dowload.scp.ps1 out)  
+ **Unity reads the point cloud:**  
   Use Unity to open the PointCloud project, and note that the Unity read path should be the location of the point cloud file.
 
 4.Unity import VR devices
