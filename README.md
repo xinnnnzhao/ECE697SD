@@ -97,6 +97,13 @@ Can export point cloud files in a single pass
 Automatically export point cloud files in real time  
 Four depth cameras simultaneously shoot in real time without delay  
 
+**Pengkai Wang**
+**Completed**  
+Architecture Designing
+Implement point cloud stitching(PointCloud Registration) by using python
+Multi-camera data stream control and export
+Optimize point cloud export efficiency
+
 **Zhao Xin**  
 **Completed**  
 Configure the network protocol and environment between the two computers  
