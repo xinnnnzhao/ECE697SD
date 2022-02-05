@@ -71,14 +71,6 @@ Although RA provides some references, it seems that they are only relevant and d
 
 **Responsibilities**  
 
-Xiaohao Xia: Develop a project time plan, and communicate with the professor. Import the point cloud file into Unity and implement modeling in Unity at the Import the point cloud file into Unity and implement modeling in Unity at the same time.  
-
-Yinxuan Wu: Responsible for the data capture of the depth camera, Point cloud stitching, read the point cloud file. save hardware, etc.  
-
-Xintao Ding: Responsible for completing the remote transmission of the cloud file with Xin Zhao, preparing the project display, and project record, Importing model data into VR headset.  
-
-Xin Zhao: Responsible for developing a software to complete remote transmission of cloud file, and second inspection experiment report.  
-
 **Xia Xiaohao**  
 **Completed**  
 Select the appropriate point cloud reading plug-in for Unity (Point Cloud Free Viewer, PCX)  
@@ -189,48 +181,3 @@ Project Proposal Overleaf Link: https://www.overleaf.com/9956381517dgvrjtymdnss
 尽管RA提供了一些参考资料，但目前看来这些参考资料仅有所关联，并不可以解决这个问题。可能我们不得不花费更多时间探索。
 
 
-**职责**  
-
-Xiaohao Xia: Develop a project time plan, and communicate with the professor. Import the point cloud file into Unity and implement modeling in Unity at the same time.  
-
-Yinxuan Wu: Responsible for the data capture of the depth camera, Point cloud stitching, read the point cloud file. save hardware, etc.  
-
-Xintao Ding: Responsible for completing the remote transmission of the cloud file with Xin Zhao, preparing the project display, and project record, importing model data into VR headset.  
-
-Xin Zhao: Responsible for develop a software to complete remote transmission of cloud file, and second inspection experiment report.  
-
-**夏晓昊**  
-**已完成**  
-选取Unity合适的点云读取插件（Point Cloud Free Viewer, PCX）  
-Unity可以单次读取不同格式（xyz和ply）的点云文件  
-可以通过Cloud Manger的start 更换为update 实现对每帧点云文件读取的刷新    
-**下一步**  
-在点云环境中创建VR观察者的摄像机，以便观察者可以通过VR设备浏览模型环境。  
-和赵鑫完成撰写实验报告   
- 
-**吴寅轩**  
-**已完成**  
-通过open3读取深度摄像机不同格式的点云文件  
-使用python实现点云拼接  
-可以单次导出点云文件    
-**下一步**  
-自动实时导出点云文件  
-四台深度摄像机同时无延迟实时拍摄  
-
-**赵鑫**  
-**已完成**  
-配置两台电脑之间的网络协议和环境  
-设计程序实现电脑A电脑B之间的点云文件远程传输    
-**下一步**    
-尝试降低传输延迟  
-实验报告撰写  
-
-**丁忻涛**  
-**已完成**  
-HTC Vive和Unity环境配置  
-选择出Unity合适的渲染管道SRP  
-问题记录    
-**下一步**  
-处理点云文件过界问题(即读取ply文件报错，解决方案见教授的RA回复)  
-实现点云追踪  
-    
