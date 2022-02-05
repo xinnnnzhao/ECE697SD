@@ -99,10 +99,10 @@ Four depth cameras simultaneously shoot in real time without delay
 
 **Pengkai Wang**  
 **Completed**  
-Architecture Designing
-Implement point cloud stitching(PointCloud Registration) by using python
-Multi-camera data stream control and export
-Optimize point cloud export efficiency
+Architecture Designing  
+Implement point cloud stitching(PointCloud Registration) by using python  
+Multi-camera data stream control and export  
+Optimize point cloud export efficiency  
 
 **Zhao Xin**  
 **Completed**  
