@@ -1,4 +1,4 @@
-# ECE697SD
+# ECE697SD -  Remote Collaboration using VR 
 
 Project Proposal Overleaf Link: https://www.overleaf.com/9956381517dgvrjtymdnss
 
